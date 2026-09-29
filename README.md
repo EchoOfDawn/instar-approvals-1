@@ -12,3 +12,10 @@ This repository holds exactly one record: `approvers.json`, the list of passkeys
 ## Record format
 
 `approvers.json`: `schema`, `rpId` (the dashboard host the passkeys are bound to), `operator` (who may approve), and `passkeys` (each: `id` = credential id, `publicKey` = COSE/SPKI public key, `label`, `addedAt`). It starts empty; Justin's first passkey is added by a pull request after he enrolls it on the page.
+## If you lose your phone
+
+Losing a phone never locks you out, because no single device is the only way in:
+
+- **Keep at least two passkeys enrolled** (your phone and your Mac, or a hardware key). Apple passkeys sync through iCloud Keychain, so a new phone signed into the same Apple account already has them.
+- **This repository is the recovery path.** From any computer signed into GitHub (which has its own recovery codes), you can add a new passkey to `approvers.json` and remove a lost one. No phone is needed.
+- **A missing passkey never stops the running system.** Only the changes that need your approval wait until you approve them with another passkey or restore one here.
