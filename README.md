@@ -11,7 +11,7 @@ This repository holds the Instar 2.0 phone approval page and its external verifi
 
 ## Record format
 
-`installation.json` (made by the [setup page](https://jkheadley.github.io/instar-approvals/#setup)): the origin and passkey host this page is served from, this repository, the approving GitHub account, and the verifier's public key. `approvers/<id>.json` (one per passkey): the passkey's public key and the evidence that it was created on this page. To enrol a passkey, open the page's `#enrol` on the device that will hold it; the page opens GitHub's editor with the file filled in, and Justin commits it directly to the default branch. A pull request is never how a passkey is added: the verifier ignores it.
+`installation.json` (made by the [setup page](https://jkheadley.github.io/instar-approvals/#setup)): the origin and passkey host this page is served from, this repository, the approving GitHub account, and the verifier's public key. `approvers/<id>.json` (one per passkey): the passkey's public key and the evidence that it was created on this page. To enrol a passkey, open the [enrol page](https://jkheadley.github.io/instar-approvals/#enrol) on the device that will hold it; the page opens GitHub's editor with the file filled in, and Justin commits it directly to the default branch. A pull request is never how a passkey is added: the verifier ignores it.
 
 ## If you lose your phone
 
